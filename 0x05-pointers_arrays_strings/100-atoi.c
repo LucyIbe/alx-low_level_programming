@@ -7,13 +7,13 @@
  */
 int _atoi(char *s)
 {
-	int sign = 1
+	int sign = 1;
 	unsigned int num = 0;
 
 	while (!('0' <= *s && *s <= '9') && *s != '\0')
 	{
 		if (*s == '-')
-			sign *= -1
+			sign *= -1;
 		if (*s == '+')
 			sign *= +1;
 		s++;
