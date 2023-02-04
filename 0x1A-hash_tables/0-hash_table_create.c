@@ -19,11 +19,11 @@ hash_table_t *hash_table_create(unsigned long int size)
 	array = malloc(size * sizeof(*array));
 	if (array == NULL)
 	{
-		free(hash_table);
-		return(NULL);
+		free (hash_table);
+		return (NULL);
 	}
 
 																hash_table->array = array;
 	return (hash_table);
 }
-}
+
